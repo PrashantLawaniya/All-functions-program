@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+// palindrome is a number which is equal to its reverse.
 int main(){
     int n,c,r,s=0;
     printf(" enter the number\n");
