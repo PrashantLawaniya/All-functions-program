@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+  int s=0,i,n,a[5],t=0,j;
+  printf("ENTER LIMIT:");
+  scanf("%d",&n);
+  printf("ENTER VALUES:");
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  for(i=0;i<n;i++)
+  {
+    for(j=0;j<n;j++)
+    {
+      if(a[i]>a[j])
+      {
+        t=a[i];
+        a[i]=a[j];
+        a[j]=t;
+      }
+    }
+  }
+  printf("THE ASCENDING ORDER IS");
+  for(i=0;i<n;i++)
+  {
+    printf("\n%d",a[i]);
+  }
+  return 0;
+}
