@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main () {
+   int  a;
+   int  *ptr;
+   int  **qtr;
+
+   a = 55;
+   ptr = &a;
+   qtr = &ptr;
+   printf("Value => a: %d\n",a);
+   printf("Value => *ptr: %d\n", *ptr );
+   printf("Value => **qtr: %d\n", **qtr);
+   return 0;
+}
