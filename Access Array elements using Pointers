@@ -1,0 +1,15 @@
+// C Program to access array elements using pointer
+#include <stdio.h>
+ 
+
+int main()
+{
+ int a[3] = { 68, 98, 68 };
+  int*ptr;
+  ptr = a;
+  printf("Elements of the array are: ");
+ 
+ printf("%d, %d, %d", ptr[0], ptr[1], ptr[2]);
+ return 0;
+}
+ 
